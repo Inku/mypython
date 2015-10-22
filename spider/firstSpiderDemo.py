@@ -8,7 +8,7 @@
 @time: 2015/10/22 14:50
 """
 
-from urllib import parse,request
+from urllib import parse, request
 
 data = {'word': 'Jecvay Notes'}
 
