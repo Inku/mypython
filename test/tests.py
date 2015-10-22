@@ -7,3 +7,7 @@
 @file: tests.py
 @time: 2015/10/21 16:40
 """
+
+from util import fibo
+
+print(dir(fibo))
