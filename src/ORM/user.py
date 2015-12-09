@@ -7,7 +7,7 @@
 @file: user.py
 @time: 2015/12/8 16:10
 """
-from ORM import model
+from src.ORM import model
 
 
 class User(model.Model):

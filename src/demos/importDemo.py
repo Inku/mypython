@@ -8,7 +8,7 @@
 @time: 2015/10/22 10:18
 """
 
-from util import fibo
+from src.util import fibo
 
 fibo.fib(1000)
 print(fibo.fib2(100))

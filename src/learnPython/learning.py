@@ -23,7 +23,7 @@ def check_version():
 if not check_version():
     exit(1)
 
-import os, io, json, subprocess, tempfile
+import os, json, subprocess, tempfile
 from urllib import parse
 from wsgiref.simple_server import make_server
 
