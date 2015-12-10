@@ -8,7 +8,7 @@
 @time: 2015/12/8 16:15
 """
 
-from src.ORM import orm
+from src.orm import orm
 
 
 class Model(dict, metaclass=orm.ModelMetaclass):

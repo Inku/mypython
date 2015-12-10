@@ -8,18 +8,11 @@
 @time: 2015/12/7 10:11
 """
 
+import subprocess
 
-def abs(n):
-    '''
-    Function to get absolute value of number.
 
-    Example:
-
-    >>> abs(1)
-    1
-    >>> abs(-1)
-    1
-    >>> abs(0)
-    0
-    '''
-    return n if n >= 0 else (-n)
+print('$ nslookup')
+p = subprocess.Popen(['nslookup'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+output, err = p.communicate(b'set q=mx\npython.org\nexit\n')
+print(output.decode('GBK'))
+print('Exit code:', p.returncode)
